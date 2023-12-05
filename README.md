@@ -21,7 +21,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import swagger_client 
+import seomonitor_client 
 ```
 
 ### Setuptools
