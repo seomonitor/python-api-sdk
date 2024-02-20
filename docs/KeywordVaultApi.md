@@ -1,6 +1,6 @@
-# swagger_client.KeywordVaultApi
+# seomonitor_client.KeywordVaultApi
 
-All URIs are relative to *https://apix.seomonitor.com*
+All URIs are relative to *https://apigw.seomonitor.com/v3/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,18 +18,18 @@ This endpoint returns the SERP, search and ranking data for the keywords in a sp
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.KeywordVaultApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.KeywordVaultApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 list = 'list_example' # str | The name of the list created in the Keyword Vault for which you want to return keyword data.
 limit = 56 # int | This parameter determines the maximum number of records to return in a single request.   Maximum Value: 1000 records per request  If you do not specify a `limit`, the default number of records returned per request will be 100. (optional)
@@ -84,18 +84,18 @@ This endpoint returns the overall aggregated search, SERP, and Visibility data f
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.KeywordVaultApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.KeywordVaultApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 list = 'list_example' # str | The name of the list created in the Keyword Vault for which you want to return keyword data.
 

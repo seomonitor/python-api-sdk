@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.best_rank import BestRank  # noqa: E501
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.models.best_rank import BestRank  # noqa: E501
+from seomonitor_client.rest import ApiException
 
 
 class TestBestRank(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestBestRank(unittest.TestCase):
     def testBestRank(self):
         """Test BestRank"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.best_rank.BestRank()  # noqa: E501
+        # model = seomonitor_client.models.best_rank.BestRank()  # noqa: E501
         pass
 
 

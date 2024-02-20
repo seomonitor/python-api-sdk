@@ -1,6 +1,6 @@
-# swagger_client.CampaignsApi
+# seomonitor_client.CampaignsApi
 
-All URIs are relative to *https://apix.seomonitor.com*
+All URIs are relative to *https://apigw.seomonitor.com/v3/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,18 +17,18 @@ This endpoint returns a list of active Tracked Campaigns with their details, suc
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CampaignsApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.CampaignsApi(seomonitor_client.ApiClient(configuration))
 campaign_ids = 'campaign_ids_example' # str | The Tracked Campaigns IDs for which you want the data to be returned.  Please refer to the Quick Start Guide to learn how to retrieve your campaign IDs.  If you do not specify `campaign_ids`, the endpoint will return the data for all active Tracked Campaigns you have access to, across all company accounts. (optional)
 company_id = 56 # int | The ID of the subscription that contains the Tracked Campaigns for which you want to return data. This is useful for users who have access to multiple company accounts.  Please refer to the Quick Start Guide to learn how to retrieve your company IDs.  If you don't specify a `company_id`, the endpoint will return the data for all Tracked Campaigns you have access to, across all company accounts. (optional)
 limit = 56 # int | The maximum number of Tracked Campaigns to return data for.   Maximum Value: 100 records per request  If you do not specify a `limit`, the default number of records returned per request will be 10. (optional)

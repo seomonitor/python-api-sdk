@@ -1,6 +1,6 @@
-# swagger_client.ForecastApi
+# seomonitor_client.ForecastApi
 
-All URIs are relative to *https://apix.seomonitor.com*
+All URIs are relative to *https://apigw.seomonitor.com/v3/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,18 +20,18 @@ This endpoint returns the forecast data for the keywords included in the Forecas
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ForecastApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.ForecastApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 forecast_id = 56 # int | This parameter specifies the ID of the Forecast scenario set as an Objective for which you want to return data.   Please refer to the 'Quick Start Guide'  to retrieve the ID of your scenarios. 
 limit = 56 # int | This parameter determines the maximum number of records to return in a single request.   Maximum Value: 1000 records per request   If you do not specify a `limit`, the default number of records returned per request will be 100. (optional)
@@ -80,18 +80,18 @@ This endpoint returns the data of Forecast Scenarios set as Objectives, includin
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ForecastApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.ForecastApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 forecast_id = 56 # int | This parameter specifies the ID of the Forecast scenario for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your Forecast scenarios. 
 
@@ -136,18 +136,18 @@ This endpoint returns the data of Forecast Scenarios created in a specified camp
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ForecastApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.ForecastApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 forecast_id = 56 # int | This parameter specifies the ID of the Forecast scenario for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your Forecast scenarios.  To get data for the Campaign Objective, use the 'Get Forecast Objective Data'. 
 
@@ -192,18 +192,18 @@ This endpoint returns a list of Scenarios created in a specified campaign, inclu
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ForecastApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.ForecastApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 
 try:

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.landing_pages import LandingPages  # noqa: E501
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.models.landing_pages import LandingPages  # noqa: E501
+from seomonitor_client.rest import ApiException
 
 
 class TestLandingPages(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestLandingPages(unittest.TestCase):
     def testLandingPages(self):
         """Test LandingPages"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.landing_pages.LandingPages()  # noqa: E501
+        # model = seomonitor_client.models.landing_pages.LandingPages()  # noqa: E501
         pass
 
 

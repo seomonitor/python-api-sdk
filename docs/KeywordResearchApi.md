@@ -1,6 +1,6 @@
-# swagger_client.KeywordResearchApi
+# seomonitor_client.KeywordResearchApi
 
-All URIs are relative to *https://apix.seomonitor.com*
+All URIs are relative to *https://apigw.seomonitor.com/v3/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,18 +22,18 @@ This endpoint returns the overall aggregated search, SERP, and Visibility data f
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.KeywordResearchApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.KeywordResearchApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 url = 'url_example' # str | This parameter specifies the domain or URL path for which you want to return the data.   If you request a domain, the endpoint will return the data for the entire domain.   If you request a URL, the endpoint will return the data only for the specified URL path. 
 gap_analysis = 'gap_analysis_example' # str | The type of keywords you want to return data for. Allowed values are `overlapping`, `non-overlapping`, or `all-keywords`.  If the `keyword_gap_type` is not specified, data for `all-keywords` is returned. (optional)
@@ -80,18 +80,18 @@ This endpoint returns the keywords on which the specified domain or URL ranks in
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.KeywordResearchApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.KeywordResearchApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 url = 'url_example' # str | This parameter specifies the domain or URL path for which you want to return the keywords ranking in top 100.  If you request a domain, the endpoint will return the data for the entire domain.   If you request a URL, the endpoint will return the data only for the specified URL path.
 limit = 56 # int | This parameter determines the maximum number of records to return in a single request.   Maximum Value: 1000 records per request  If you do not specify a `limit`, the default number of records returned per request will be 100. (optional)
@@ -148,18 +148,18 @@ This endpoint returns the SERP, search and your ranking data for the keywords sp
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.KeywordResearchApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.KeywordResearchApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns. 
 keywords = 'keywords_example' # str | Comma-separated list of keyword phrases that you want to return data for. 
 limit = 56 # int | This parameter determines the maximum number of records to return in a single request.   Maximum Value: 1000 records per request  If you do not specify a `limit`, the default number of records returned per request will be 100. (optional)
@@ -212,18 +212,18 @@ This endpoint returns the SERP, search, and ranking data for the keywords specif
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.KeywordResearchApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.KeywordResearchApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns. 
 keywords = ['keywords_example'] # list[str] | A comma-separated list of keyword phrases that you want to return data for.
 domains = 'domains_example' # str | A comma-separated list of domains for which you want to return the ranking data. The maximum number of domains allowed is 10.
@@ -278,18 +278,18 @@ This endpoint returns the SERP, search, and your ranking data of the related key
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.KeywordResearchApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.KeywordResearchApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 keyword = 'keyword_example' # str | The topic for which you want to return related keywords' data.
 limit = 56 # int | This parameter determines the maximum number of records to return in a single request.   Maximum Value: 1000 records per request  If you do not specify a `limit`, the default number of records returned per request will be 100. (optional)
@@ -344,18 +344,18 @@ This endpoint returns the overall aggregated search, SERP, and your website's Vi
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.KeywordResearchApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.KeywordResearchApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 keyword = 'keyword_example' # str | The topic for which you want to return related keywords' data.
 

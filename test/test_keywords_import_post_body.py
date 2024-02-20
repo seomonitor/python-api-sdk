@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.keywords_import_post_body import KeywordsImportPostBody  # noqa: E501
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.models.keywords_import_post_body import KeywordsImportPostBody  # noqa: E501
+from seomonitor_client.rest import ApiException
 
 
 class TestKeywordsImportPostBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestKeywordsImportPostBody(unittest.TestCase):
     def testKeywordsImportPostBody(self):
         """Test KeywordsImportPostBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.keywords_import_post_body.KeywordsImportPostBody()  # noqa: E501
+        # model = seomonitor_client.models.keywords_import_post_body.KeywordsImportPostBody()  # noqa: E501
         pass
 
 

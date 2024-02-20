@@ -1,6 +1,6 @@
-# swagger_client.RankTrackerApi
+# seomonitor_client.RankTrackerApi
 
-All URIs are relative to *https://apix.seomonitor.com*
+All URIs are relative to *https://apigw.seomonitor.com/v3/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -28,18 +28,18 @@ Retrieves the daily share of clicks of your domain and the top ten ones by visib
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RankTrackerApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.RankTrackerApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.    Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 start_date = '2013-10-20' # date | This parameter specifies the start date of the timeframe for which you want to return the data, in YYYY-MM-DD format. (optional)
 end_date = '2013-10-20' # date | This parameter specifies the end date of the timeframe for which you want to return the data in YYYY-MM-DD format. (optional)
@@ -90,18 +90,18 @@ Retrieves the daily Visibility and average weighted ranks of your website or of 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RankTrackerApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.RankTrackerApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 start_date = '2013-10-20' # date | This parameter specifies the start date of the timeframe for which you want to return the data, in YYYY-MM-DD format.
 end_date = '2013-10-20' # date | This parameter specifies the end date of the timeframe for which you want to return the data in YYYY-MM-DD format.
@@ -156,18 +156,18 @@ With this endpoint, you can retrieve overall aggregated search and SERP data alo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RankTrackerApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.RankTrackerApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 start_date = '2013-10-20' # date | The start date of the timeframe for which you want to return the data in YYYY-MM-DD format.
 end_date = '2013-10-20' # date | The end date of the timeframe for which you want to return the data in YYYY-MM-DD format.
@@ -220,18 +220,18 @@ This endpoint allows you to retrieve all keyword groups including their structur
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RankTrackerApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.RankTrackerApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | The campaign ID for which the group structure will be returned.  Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 
 try:
@@ -274,18 +274,18 @@ This endpoint returns the specified competitors' ranking data for a campaign.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RankTrackerApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.RankTrackerApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | The ID of the campaign for which keyword competitor ranking data must be returned.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 start_date = '2013-10-20' # date | The start date of the date range to get ranking data for, in YYYY-MM-DD format. This is the earliest date of rankings to include.
 end_date = '2013-10-20' # date | The end date of the date range to get ranking data for, in YYYY-MM-DD format. This is the most recent date of rankings to include.
@@ -350,18 +350,18 @@ This endpoint returns the daily desktop and mobile ranks for your website or any
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RankTrackerApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.RankTrackerApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 start_date = '2013-10-20' # date | The start date of the timeframe for which you want to return the data, in YYYY-MM-DD format.
 end_date = '2013-10-20' # date | The end date of the timeframe for which you want to return the data, in YYYY-MM-DD format.
@@ -422,18 +422,18 @@ This endpoint retrieves active keywords and their corresponding data within a sp
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RankTrackerApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.RankTrackerApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns. 
 end_date = '2013-10-20' # date | This parameter specifies the end date of the timeframe for which you want to return the ranking and traffic data in YYYY-MM-DD format.  If you don't specify an `end_date`, the default is the current day.
 start_date = '2013-10-20' # date | This parameter specifies the start date of the timeframe for which you want to return the ranking and traffic data in YYYY-MM-DD format.  If you don't specify a `start_date`, the default is 30 days before the `end_date`.
@@ -494,19 +494,19 @@ With this endpoint, you can add a list of keywords to the specified groups of a 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RankTrackerApi(swagger_client.ApiClient(configuration))
-body = swagger_client.KeywordsImportPostBody() # KeywordsImportPostBody | 
+api_instance = seomonitor_client.RankTrackerApi(seomonitor_client.ApiClient(configuration))
+body = seomonitor_client.KeywordsImportPostBody() # KeywordsImportPostBody | 
 
 try:
     # Add New Keywords
@@ -548,18 +548,18 @@ With this endpoint, you can retrieve the current status of a keyword import task
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RankTrackerApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.RankTrackerApi(seomonitor_client.ApiClient(configuration))
 import_id = 56 # int | The import ID of the task.  Please refer to the Add New Keywords endpoint in our API to retrieve the `import_id`.
 campaign_id = 56 # int | The ID of the campaign to which you want to add/import keywords.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns. 
 
@@ -604,18 +604,18 @@ This endpoint returns the ranking pages of the tracked keywords in a campaign.  
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RankTrackerApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.RankTrackerApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 group_id = 56 # int | The IDs of specific groups in the campaign to get keyword data for.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your groups.  If you do not specify a `group_id`, the default value is the `All Keywords` group, which means data will be returned for all active keywords in the campaign. (optional)
 limit = 56 # int | Determines the maximum number of records to return in a single request.   Maximum Value: 1000 records per request.  If you do not specify a `limit`, the default number of records returned per request will be 100. (optional)
@@ -666,18 +666,18 @@ This endpoint returns the historical daily SERP feature data for specified keywo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RankTrackerApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.RankTrackerApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 start_date = '2013-10-20' # date | This parameter specifies the start date of the timeframe for which you want to return the data in YYYY-MM-DD format.
 end_date = '2013-10-20' # date | This parameter specifies the end date of the timeframe for which you want to return the data in YYYY-MM-DD format.
@@ -734,18 +734,18 @@ This endpoint returns the top 100 results for the requested keywords on a specif
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RankTrackerApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.RankTrackerApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | The ID of the campaign for which keyword competitor ranking data must be returned.  Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 _date = '2013-10-20' # date | The date for which the ranking data will be provided, in YYYY-MM-DD format.
 device = 'device_example' # str | The device type to get ranking data for–either `desktop` or `mobile`.  The default selection is `desktop`.

@@ -1,6 +1,6 @@
-# swagger_client.OrganicTrafficApi
+# seomonitor_client.OrganicTrafficApi
 
-All URIs are relative to *https://apix.seomonitor.com*
+All URIs are relative to *https://apigw.seomonitor.com/v3/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,18 +18,18 @@ This endpoint returns the organic traffic metrics by day for a traffic segment o
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrganicTrafficApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.OrganicTrafficApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 start_date = '2013-10-20' # date | This parameter specifies the start date of the timeframe for which you want to return the data, in YYYY-MM-DD format.
 end_date = '2013-10-20' # date | This parameter specifies the end date of the timeframe for which you want to return the data, in YYYY-MM-DD format.
@@ -78,18 +78,18 @@ This endpoint returns the traffic data by keyword for a specific traffic segment
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: AuthorizationToken
-configuration = swagger_client.Configuration()
+configuration = seomonitor_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.OrganicTrafficApi(swagger_client.ApiClient(configuration))
+api_instance = seomonitor_client.OrganicTrafficApi(seomonitor_client.ApiClient(configuration))
 campaign_id = 56 # int | This parameter specifies the ID of the campaign for which you want to return data.   Please refer to the Quick Start Guide to learn how to retrieve the IDs of your campaigns.
 start_date = '2013-10-20' # date | This parameter specifies the start date of the timeframe for which you want to return the data, in YYYY-MM-DD format.
 end_date = '2013-10-20' # date | This parameter specifies the end date of the timeframe for which you want to return the data, in YYYY-MM-DD format.

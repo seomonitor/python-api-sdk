@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.organic_traffic_api import OrganicTrafficApi  # noqa: E501
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.api.organic_traffic_api import OrganicTrafficApi  # noqa: E501
+from seomonitor_client.rest import ApiException
 
 
 class TestOrganicTrafficApi(unittest.TestCase):

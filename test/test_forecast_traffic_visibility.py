@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.forecast_traffic_visibility import ForecastTrafficVisibility  # noqa: E501
-from swagger_client.rest import ApiException
+import seomonitor_client
+from seomonitor_client.models.forecast_traffic_visibility import ForecastTrafficVisibility  # noqa: E501
+from seomonitor_client.rest import ApiException
 
 
 class TestForecastTrafficVisibility(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestForecastTrafficVisibility(unittest.TestCase):
     def testForecastTrafficVisibility(self):
         """Test ForecastTrafficVisibility"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.forecast_traffic_visibility.ForecastTrafficVisibility()  # noqa: E501
+        # model = seomonitor_client.models.forecast_traffic_visibility.ForecastTrafficVisibility()  # noqa: E501
         pass
 
 
