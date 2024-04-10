@@ -138,7 +138,7 @@ class KeywordDetail(object):
         The exact keyword phrase.  # noqa: E501
 
         :param keyword: The keyword of this KeywordDetail.  # noqa: E501
-        :type: str
+        :type: int
         """
 
         self._keyword = keyword
@@ -150,7 +150,7 @@ class KeywordDetail(object):
         The ID of the main keyword, if the current keyword is aggregated under another keyword as its close variation.  # noqa: E501
 
         :return: The main_keyword_id of this KeywordDetail.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._main_keyword_id
 
@@ -161,7 +161,7 @@ class KeywordDetail(object):
         The ID of the main keyword, if the current keyword is aggregated under another keyword as its close variation.  # noqa: E501
 
         :param main_keyword_id: The main_keyword_id of this KeywordDetail.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._main_keyword_id = main_keyword_id
