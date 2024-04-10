@@ -30,7 +30,7 @@ class KeywordDetail(object):
     swagger_types = {
         'keyword_id': 'int',
         'keyword': 'str',
-        'main_keyword_id': 'int',
+        'main_keyword_id': 'str',
         'search_intent': 'str',
         'labels': 'str',
         'groups': 'str',
