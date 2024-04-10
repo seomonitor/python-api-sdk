@@ -158,7 +158,7 @@ class ApiClient(object):
             # deserialize response data
             if response_type:
                 #return_data = self.deserialize(response_data, response_type)
-                return_data = response_data
+                return_data = response_data.data
             else:
                 return_data = None
 
